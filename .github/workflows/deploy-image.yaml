@@ -1,13 +1,13 @@
 name: deploy-image
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows:
-      - build-latest
-    branches:
-      - master
-    types:
-      - completed
+  # workflow_run:
+  #   workflows:
+  #     - build-latest
+  #   branches:
+  #     - master
+  #   types:
+  #     - completed
 jobs:
   deploy-image:
     runs-on: ubuntu-latest
